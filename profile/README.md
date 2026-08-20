@@ -6,13 +6,13 @@ A security remediation and evidence platform for MSPs and security teams. Remede
 
 > **PATCHED ≠ VERIFIED FIXED**
 
-## Software
+## Project
 
-The primary Remedence codebase will live in [`software`](https://github.com/remedence/software), covering the multi-tenant remediation workflow, independent verification, evidence tracking, client reporting, and integrations.
+The primary open-source Remedence platform will live in [`remedence`](https://github.com/remedence/remedence), following the same product-name repository pattern used by mature security projects.
 
-## Organization
-
-- [`software`](https://github.com/remedence/software) — Remedence software
+- [`remedence`](https://github.com/remedence/remedence) — core multi-tenant remediation, verification, evidence, reporting, and integration platform
 - [`.github`](https://github.com/remedence/.github) — organization profile and shared GitHub configuration
+
+As the project grows, specialized repositories can be split out for documentation, SDKs, deployment charts, connectors, or integrations only when they need independent release cycles.
 
 `Remediate → Verify → Prove`
