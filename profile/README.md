@@ -1,41 +1,18 @@
 # Remedence
 
-Security remediation is only complete when it is verified.
-
-Remedence builds security remediation and evidence software for MSPs and security teams. We help teams move findings from remediation to independent verification, preserve closure evidence, and produce client-ready proof.
-
-## What we build
-
-- **Remediation workflows** — track findings, owners, SLAs, and remediation state across customer environments.
-- **Independent verification** — verify that a fix actually closes the original security issue before marking it complete.
-- **Evidence** — preserve rescans, tests, timestamps, remediation references, and audit history.
-- **Client proof** — turn technical remediation activity into clear security posture and reporting.
-
-Our core rule is simple:
-
-> **PATCHED ≠ VERIFIED FIXED**
-
-## Projects
-
-Remedence is currently building its first design-partner demo and platform foundation.
-
-| Repository | Purpose |
-| --- | --- |
-| `demo` | Clickable MSP remediation and evidence demo |
-| `platform` | Core multi-tenant Remedence platform |
-| `integrations` | Security, PSA/RMM, Microsoft 365, and scanner integrations |
-| `.github` | Organization profile and shared community files |
-
-## Security
-
-Security reports should be submitted through the repository-specific security policy or private vulnerability reporting when enabled. Please do not publish suspected vulnerabilities before a coordinated review.
-
-## Contributing
-
-Public contribution guidance will be added as repositories are opened for external contribution. Until then, repository documentation is the source of truth for development and contribution requirements.
-
-## Brand
+A security remediation and evidence platform for MSPs and security teams. Remedence turns security findings into independently verified closure, preserves the evidence behind each fix, and makes the result easy to prove to customers.
 
 **Security work. Proven complete.**
 
-`Remediate > Verify > Prove`
+> **PATCHED ≠ VERIFIED FIXED**
+
+## Software
+
+The primary Remedence codebase will live in [`software`](https://github.com/remedence/software), covering the multi-tenant remediation workflow, independent verification, evidence tracking, client reporting, and integrations.
+
+## Organization
+
+- [`software`](https://github.com/remedence/software) — Remedence software
+- [`.github`](https://github.com/remedence/.github) — organization profile and shared GitHub configuration
+
+`Remediate → Verify → Prove`
