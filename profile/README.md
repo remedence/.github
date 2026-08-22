@@ -6,13 +6,20 @@ A security remediation and evidence platform for MSPs and security teams. Remede
 
 > **PATCHED ≠ VERIFIED FIXED**
 
-## Project
+## Current release
 
-The primary open-source Remedence platform will live in [`remedence`](https://github.com/remedence/remedence), following the same product-name repository pattern used by mature security projects.
+Persistent local core v1 is shipped on [`remedence`](https://github.com/remedence/remedence) `main`.
 
-- [`remedence`](https://github.com/remedence/remedence) — core multi-tenant remediation, verification, evidence, reporting, and integration platform
+The current open-source release provides durable SQLite-backed findings, remediation records, retained failed verification history, independent verification, locked evidence metadata, append-only audit history, immutable report snapshots, Markdown report download, database backup foundations, and a production-local mode that serves the built UI and `/api/v1` from one loopback Node process.
+
+Local v1 intentionally binds to `127.0.0.1` and does not yet provide hosted SaaS authentication, production multi-user RBAC, managed vendor integrations, or hosted verification workers. It should not be exposed directly to an untrusted network.
+
+## Repositories
+
+- [`remedence`](https://github.com/remedence/remedence) — canonical open-source platform and persistent local core
+- [`remedence.github.io`](https://github.com/remedence/remedence.github.io) — official public website
 - [`.github`](https://github.com/remedence/.github) — organization profile and shared GitHub configuration
 
-As the project grows, specialized repositories can be split out for documentation, SDKs, deployment charts, connectors, or integrations only when they need independent release cycles.
+Future multi-tenant, managed-cloud, SDK, connector, and deployment repositories should be split out only when they need independent release cycles.
 
 `Remediate → Verify → Prove`
